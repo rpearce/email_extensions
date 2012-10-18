@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'jsonp'
+require 'sinatra/jsonp'
 require 'mongo_mapper'
 require './models/email_extension'
 
@@ -13,5 +13,5 @@ end
 get '/api/:name' do
   result = EmailExtension.where(name: params[:name])
 
-  result.to_json
+  jsonp result
 end

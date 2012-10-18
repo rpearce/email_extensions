@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'jsonp'
+gem 'sinatra-jsonp', :require => 'sinatra/jsonp'
 gem 'mongo_mapper'
 gem 'bson_ext'
 gem 'thin'
