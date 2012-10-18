@@ -18,3 +18,14 @@ This is a little API that accepts requests for a name and returns a JSON object 
          console.log(data);
       }
     });
+
+### Notes
+Before you get started with this on your own, you'll need to either set environment variables like this (on unix):
+
+    $ export WHATEVER_YOUR_USER_VAR_IS=whateveruser
+
+and make sure the variables in app.rb are the same.
+
+If you put your own on Heroku, you'll need to do:
+
+    $ heroku config:add WHATEVER_YOUR_USER_VAR_IS=whateveruser
