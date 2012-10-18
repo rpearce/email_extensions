@@ -10,6 +10,11 @@ This is a little API that accepts AJAX requests and returns a JSON object contai
     $ curl http://extensions.ridepost.com/api/university_of_south_carolina
 
 ## Example as AJAX
-    $.getJSON('http://extensions.ridepost.com/api/university_of_south_carolina', function(data) {
-      console.log(data);
+    $.ajax({
+      type: 'get',
+      url: 'http://extensions.ridepost.com/api/university_of_south_carolina',
+      dataType: 'jsonp',
+      success: function(data) {
+         console.log(data);
+      }
     });
