@@ -43,7 +43,6 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   jsonp
-  mongo
   mongo_mapper
   sinatra
   thin
